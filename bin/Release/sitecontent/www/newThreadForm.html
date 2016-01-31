@@ -1,0 +1,80 @@
+<hr/>
+<div class='new_thread_form_status_block control_text'> 
+	<span id='new_thread_form_status' onclick='newThreadFormHide()'>[Скрыть]</span>
+</div>
+<div class='new_thread_form'>
+	<form action='?command=newthread' method='POST' enctype='multipart/form-data' accept-charset='utf-8'>
+		<input type='hidden' name='ret_page' value='{RETURNPAGE}' />	
+		<input type='hidden' name='cat_id' value='{CATID}' />	
+		<input type='hidden' name='user_id' value='{USERID}' />			
+		<input class="login_field" type='text' name='login' value='' />				
+		<table>
+			<tr>
+				<td class='col_label'>Имя</td> 
+				<td class='col_inputs'>
+				<input type='text' class='name_input' name='name' value='Анонимус' maxlength='30' pattern='[а-яА-Яa-zA-Z0-9_ ]+'/>
+				</td>
+			</tr>			
+			<tr>
+				<td class='col_label'>Тема</td> 
+				<td class='col_inputs'>
+				<input type='text' class='theme_input' name='subject' maxlength='64' value='' pattern='[а-яА-Яa-zA-Z0-9_ ]+'/>									
+				</td>
+			</tr>			
+			<tr>
+				<td class='col_label'>Сообщение</td> 
+				<td class='col_inputs'>
+				<textarea class='text_input' id='threadReplyText' name='message' cols='60' rows='6'></textarea>				
+				</td>
+			</tr>	
+			<tr>
+				<td class='col_label'>Возрастной рейтинг</td> 
+				<td class='col_inputs'>
+				<select name='age_rating'>
+					<option selected value='0'>Для всех</option>
+					<option value='1'>После 13 лет</option>
+					<option value='2'>После 17 лет</option>
+					<option value='3'>После 18 лет</option>
+				</select>
+				</td>
+			</tr>	
+			<tr>
+				<td class='col_label'>Опрос</td> 
+				<td class='col_inputs'>
+				<select name='surveys_ids'>
+					<option selected value='0'>Нет</option>
+					{SURVEYSLIST}
+				</select>
+				</td>				
+			</tr>	
+			<tr>
+				<td class='col_label'>Скрыть тему</td> 
+				<td class='col_inputs'>
+					<input type='checkbox' name='hide' />	
+				</td>
+			</tr>
+			<tr>
+				<td class='col_label'>Файлы</td> 
+				<td class='col_inputs'>						
+				<input type='hidden' id='thread_files_cnt' name='thread_files_cnt' value='0' />	
+				<div class='file_control control_text'>
+					<span id='"threadFileDel0' onclick='delFile(this, true)'>[Очисить] </span>
+				</div>	
+				<div class='file_input'>
+					<input id='threadFileUpload0' type='file' name='threadfile0' onchange='checkFiles(this, true)'>
+				</div>			
+				<div class='file_status control_text'>
+					<span id="threadFileStatus0"></span>
+				</div>
+				<div class='file_separator'></div>
+				<div class='file_del control_text'>
+					<span onclick='delAllFiles(true)'>[Очистить всё]</span>
+				</div>				
+				</td>
+			</tr>				
+		</table>
+		<div class='submit_button'>
+			<input type='submit' name='new_thread' value='      Создать тему       '  />	
+		</div>
+	</form>
+</div>

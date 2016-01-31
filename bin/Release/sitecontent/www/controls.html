@@ -1,0 +1,16 @@
+<span>[ </span>
+<img width='16' height='16' src='../sitecontent/img/controls/comment.png' alt='Ответить |' title='Ответить' onclick='answerClick("{CURRBLOCKID}", "#new_post_form", {THREADID})'>
+{isHIDDEN}{<img width='16' height='16' src='../sitecontent/img/controls/show.png' alt='Показать |' title='Показать' onclick='hideClick("{CURRBLOCKID}", true)'>}{
+<img width='16' height='16' src='../sitecontent/img/controls/hide.png' alt='Скрыть |' title='Скрыть' onclick='hideClick("{CURRBLOCKID}", false)'>}
+<img width='16' height='16' src='../sitecontent/img/controls/complain.png' alt='| Пожаловаться' title='Пожаловаться' onclick='complain("{CURRBLOCKID}")'>
+{isTHREAD}{{isFIXED}{<img width='16px' height='16' src='../sitecontent/img/controls/fix.png' alt='Открепить |' title='Открепить' onclick='fixThread("{CURRBLOCKID}",true)'>}{
+<img width='16' height='16' src='../sitecontent/img/controls/not_fix.png' alt='Закрепить |' title='Закрепить' onclick='fixThread("{CURRBLOCKID}",false)'>}}{} 
+{isFAVORITE}{<img width='16' height='16' src='../sitecontent/img/controls/favorite.png' alt='Убрать из избранного |' title='Убрать из избранного' onclick='addToFavorite("{CURRBLOCKID}", true)'>}{
+<img width='16' height='16' src='../sitecontent/img/controls/not_favorite.png' alt='В избранное |' title='В избранное' onclick='addToFavorite("{CURRBLOCKID}", false)'>}
+<span> ]</span>
+{isOWNER}{<span> [ </span><img width='16' height='16' src='../sitecontent/img/controls/delete.png' alt='| Удалить' title='Удалить' onclick='delClick("{CURRBLOCKID}")'>
+<img width='16' height='16' src='../sitecontent/img/controls/edit.png' alt='| Редактировать' title='Редактировать' onclick='gotoPage("?page=edit&id={CURRBLOCKID}")'><span> ]</span>}{}
+{isMODER}{<span> [ </span><img width='16' height='16' src='../sitecontent/img/controls/mark_green.png' alt='| Убрать жалобы' title='Убрать жалобы' onclick='clearComplain("{CURRBLOCKID}")'>
+{isTHREAD}{{isALLFIXED}{<img width='16' height='16' src='../sitecontent/img/controls/allfix.png' alt='| Открепить' title='Открепить' onclick='fixToAll("{CURRBLOCKID}", true)'>}{
+<img width='16' height='16' src='../sitecontent/img/controls/not_allfix.png' alt='| Закрепить для всех' title='Закрепить для всех' onclick='fixToAll("{CURRBLOCKID}", false)'>}}{}
+<span> ]</span>}{}

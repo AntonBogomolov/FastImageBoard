@@ -1,0 +1,20 @@
+<div class='thread news' id='t{ID}'>
+	<div class='info'>		
+		<span class='thread_name' onclick='gotoPage("?page=thread&tid={ID}")'>{NEWSNAME}</span>	
+		<span class='date'>  {DATE} </span>
+		<span class='id'> | id: t{ID} </span>			
+	</div>
+	<hr>	
+	<div class='user_content_container'>
+	<div class='attach'>
+		{ATTACH}
+	</div>	
+	<div class='user_text {isMANYATTACH}{block_elem}{}'>
+		{TEXT}
+	</div>	
+	</div>
+	<div class='user_survey'>		
+		{SURVEY}
+	</div>
+	<div class='post_end'>end</div>	
+</div>

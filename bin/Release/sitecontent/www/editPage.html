@@ -1,0 +1,32 @@
+<h1>Редактирование</h1>
+<div class='new_thread_form'>
+	<form action='?command=edit' method='POST' enctype='multipart/form-data' accept-charset='utf-8'>		
+		<input type='hidden' name='ret_page'  value='{RETURNPAGE}' />		
+		<input type='hidden' name='edit_type' value='{EDITTYPE}' />		
+		<input type='hidden' name='user_id' value='{USERID}' />		
+		<input type='hidden' name='id' value='{ID}' />					
+		<table border='0'>							
+			<tr>
+				<td class='col_label'>Сообщение</td> 
+				<td class='col_inputs'>
+				<textarea id='threadReplyText' name='message' cols='60' rows='6'>{TEXT}</textarea>				
+				</td>
+			</tr>		
+			<tr>
+				<td class='col_label'>Файлы</td> 
+				<td class='col_inputs'>						
+					<input type="checkbox" name="delfiles" value="del"> Удалить все вложения
+				</td>
+			</tr>	
+			{isTHREAD}{
+			<tr>
+				<td class='col_label'>Скрытая тема</td> 
+				<td class='col_inputs'>
+					<input type='checkbox' name='hide' {isHIDDEN}{checked}{} />	
+				</td>
+			</tr>	
+			}		
+		</table>
+		<input type='submit' name='edit' value='Отправить' />		
+	</form>
+</div>

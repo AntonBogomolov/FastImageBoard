@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Advice" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Board/;Board/Pages/;Board/Pages/;Board/Managers/;Board/App/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Advice" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-fpermissive" />
+					<Add directory="/usr/include/mysql" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread" />
+					<Add option="-pie" />
+					<Add library="/usr/lib/libfastcgipp.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_atomic.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_chrono.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_date_time.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_exception.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_log.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_system.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libboost_thread.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libmysqlclient.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libz.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libdl.so" />
+					<Add library="/home/anton/epeg-master/src/lib/.libs/libepeg.a" />
+					<Add library="/usr/lib/i386-linux-gnu/libjpeg.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Advice" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-march=corei7" />
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add directory="/usr/include/mysql" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-pthread -lepeg -lnovember" />
+					<Add directory="/usr/lib" />
+					<Add directory="/usr/lib/i386-linux-gnu" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CAdviceBoard.cpp">
+			<Option virtualFolder="Board/App/" />
+		</Unit>
+		<Unit filename="CAdviceBoard.h">
+			<Option virtualFolder="Board/App/" />
+		</Unit>
+		<Unit filename="CAttachment.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CAttachment.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CBaseMessage.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CBaseMessage.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CCatPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CCatPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CComplainPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CComplainPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CEditPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CEditPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CFavoritesPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CFavoritesPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CHelpPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CHelpPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CMenu.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CMenu.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CPost.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CPost.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CPremodPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CPremodPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CRulesPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CRulesPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSessionsPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSessionsPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSettingsPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSettingsPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSiteCommandManager.cpp">
+			<Option virtualFolder="Board/Managers/" />
+		</Unit>
+		<Unit filename="CSiteCommandManager.h">
+			<Option virtualFolder="Board/Managers/" />
+		</Unit>
+		<Unit filename="CSiteErrorPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSiteErrorPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSiteIndexPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSiteIndexPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSitePage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSitePage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSiteResourceManager.cpp">
+			<Option virtualFolder="Board/Managers/" />
+		</Unit>
+		<Unit filename="CSiteResourceManager.h">
+			<Option virtualFolder="Board/Managers/" />
+		</Unit>
+		<Unit filename="CSurvey.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CSurvey.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CSurveyPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CSurveyPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CThread.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CThread.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CThreadPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CThreadPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CUser.cpp">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CUser.h">
+			<Option virtualFolder="Board/" />
+		</Unit>
+		<Unit filename="CUserContentPage.cpp">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="CUserContentPage.h">
+			<Option virtualFolder="Board/Pages/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

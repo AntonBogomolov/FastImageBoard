@@ -1,0 +1,454 @@
+# depslib dependency file v1.0
+1452356578 source:/home/anton/projects/advice/CAdviceBoard.cpp
+	"CAdviceBoard.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CPathsHelper.h"
+	"novemberlib/helpers/CTextHelper.h"
+	"CSiteCommandManager.h"
+	"CSiteResourceManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CMySQLDBManager.h"
+	"novemberlib/managers/CPageManager.h"
+	"novemberlib/managers/CSessionManager.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"CMenu.h"
+	"CSiteErrorPage.h"
+	"CUser.h"
+	"CSiteIndexPage.h"
+	"CCatPage.h"
+	"CPremodPage.h"
+	"CComplainPage.h"
+	"CEditPage.h"
+	"CFavoritesPage.h"
+	"CHelpPage.h"
+	"CRulesPage.h"
+	"CSessionsPage.h"
+	"CSettingsPage.h"
+	"CSurveyPage.h"
+	"CThreadPage.h"
+	"CUserContentPage.h"
+	<vector>
+	<string>
+	<memory>
+
+1449940250 /home/anton/projects/advice/CAdviceBoard.h
+	"novemberlib/FCGI/CFCGIApp.h"
+
+1449941226 /home/anton/projects/advice/CSiteSessionManager.h
+	"novemberlib/managers/CSessionManager.h"
+
+1449941236 /home/anton/projects/advice/CSiteCommandManager.h
+	"novemberlib/managers/CCommandsManager.h"
+
+1449941237 /home/anton/projects/advice/CSiteResourceManager.h
+	"novemberlib/managers/CResourceManager.h"
+
+1448040023 /home/anton/projects/advice/CMenu.h
+	<vector>
+	<string>
+
+1450024493 /home/anton/projects/advice/CSiteErrorPage.h
+	"novemberlib/pages/CErrorPage.h"
+	"novemberlib/interfaces/IErrorMessage.h"
+
+1446634871 /home/anton/projects/advice/CSiteIndexPage.h
+	"CSitePage.h"
+
+1450021774 /home/anton/projects/advice/CSitePage.h
+	"novemberlib/pages/CPage.h"
+
+1446633580 /home/anton/projects/advice/CCatPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CPremodPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CComplainPage.h
+	"CSitePage.h"
+
+1446631533 /home/anton/projects/advice/CEditPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CFavoritesPage.h
+	"CSitePage.h"
+	<string>
+
+1449943895 /home/anton/projects/advice/CHelpPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CRulesPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CSessionsPage.h
+	"CSitePage.h"
+
+1446633581 /home/anton/projects/advice/CSettingsPage.h
+	"CSitePage.h"
+
+1446633514 /home/anton/projects/advice/CSurveyPage.h
+	"CSitePage.h"
+
+1446629928 /home/anton/projects/advice/CThreadPage.h
+	"CSitePage.h"
+
+1446630049 /home/anton/projects/advice/CUserContentPage.h
+	"CSitePage.h"
+
+1449940782 source:/home/anton/projects/advice/CAttachment.cpp
+	"CAttachment.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/MIMEType.h"
+	"CSiteResourceManager.h"
+
+1439736673 /home/anton/projects/advice/CAttachment.h
+	<string>
+	<vector>
+
+1441463293 source:/home/anton/projects/advice/CBaseMessage.cpp
+	"CBaseMessage.h"
+	"CAttachment.h"
+
+1441463277 /home/anton/projects/advice/CBaseMessage.h
+	<string>
+	<vector>
+
+1449941431 source:/home/anton/projects/advice/CCatPage.cpp
+	"CCatPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CMenu.h"
+	"CThread.h"
+	"CUser.h"
+
+1448040045 /home/anton/projects/advice/CThread.h
+	"CBaseMessage.h"
+	<string>
+	<vector>
+
+1453557906 /home/anton/projects/advice/CUser.h
+	"novemberlib/CDefaultUser.h"
+	<string>
+	<vector>
+
+1449941452 source:/home/anton/projects/advice/CComplainPage.cpp
+	"CComplainPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+	"CThread.h"
+	"CPost.h"
+
+1448040234 /home/anton/projects/advice/CPost.h
+	"CBaseMessage.h"
+	<string>
+	<vector>
+
+1450106060 source:/home/anton/projects/advice/CEditPage.cpp
+	"CEditPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CMenu.h"
+	"CThread.h"
+	"CPost.h"
+	"CUser.h"
+
+1449941484 source:/home/anton/projects/advice/CFavoritesPage.cpp
+	"CFavoritesPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CThread.h"
+	"CPost.h"
+	"CUser.h"
+
+1449943898 source:/home/anton/projects/advice/CHelpPage.cpp
+	"CHelpPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+
+1449941016 source:/home/anton/projects/advice/CMenu.cpp
+	"CMenu.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CDBManager.h"
+	"CThread.h"
+
+1449940977 source:/home/anton/projects/advice/CPost.cpp
+	"CPost.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIApp.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CDBManager.h"
+	"CAttachment.h"
+
+1449941510 source:/home/anton/projects/advice/CPremodPage.cpp
+	"CPremodPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+	"CThread.h"
+	"CPost.h"
+
+1449941520 source:/home/anton/projects/advice/CRulesPage.cpp
+	"CRulesPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+
+1449941533 source:/home/anton/projects/advice/CSessionsPage.cpp
+	"CSessionsPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+
+1449941544 source:/home/anton/projects/advice/CSettingsPage.cpp
+	"CSettingsPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+
+1450106211 source:/home/anton/projects/advice/CSiteCommandManager.cpp
+	"CSiteCommandManager.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/md5.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CPageManager.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"CMenu.h"
+	"CThread.h"
+	"CPost.h"
+	"CSitePage.h"
+	"CUser.h"
+	"CSurvey.h"
+	"CSiteResourceManager.h"
+
+1449941933 /home/anton/projects/advice/CSurvey.h
+	"novemberlib/interfaces/IStringSerializer.h"
+	"novemberlib/interfaces/IValidTester.h"
+	<string>
+	<vector>
+	<map>
+
+1450024491 source:/home/anton/projects/advice/CSiteErrorPage.cpp
+	"CSiteErrorPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+
+1449941606 source:/home/anton/projects/advice/CSiteIndexPage.cpp
+	"CSiteIndexPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CMenu.h"
+	"CThread.h"
+	"CUser.h"
+
+1450007805 source:/home/anton/projects/advice/CSitePage.cpp
+	"CSitePage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CMenu.h"
+	"CPost.h"
+	"CThread.h"
+	"CAttachment.h"
+	"CUser.h"
+	"CSurvey.h"
+
+1449940668 source:/home/anton/projects/advice/CSiteResourceManager.cpp
+	"CSiteResourceManager.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CSyncHelper.h"
+	"novemberlib/helpers/CPathsHelper.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/utils/MIMEType.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/md5.h"
+	"Epeg.h"
+	<string>
+	<fstream>
+	<sstream>
+
+1450195697 source:/home/anton/projects/advice/CSiteSessionManager.cpp
+	"CSiteSessionManager.h"
+	"novemberlib/FCGI/CFCGIApp.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/utils/CLog.h"
+	"CUser.h"
+
+1449941090 source:/home/anton/projects/advice/CSurvey.cpp
+	"CSurvey.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CDBManager.h"
+	<algorithm>
+
+1449941627 source:/home/anton/projects/advice/CSurveyPage.cpp
+	"CSurveyPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CMenu.h"
+	"CThread.h"
+	"CPost.h"
+	"CUser.h"
+	"CSurvey.h"
+
+1450024366 source:/home/anton/projects/advice/CThread.cpp
+	"CThread.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"CAttachment.h"
+	"CPost.h"
+	"CSurvey.h"
+
+1449942009 source:/home/anton/projects/advice/CThreadPage.cpp
+	"CThreadPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/managers/CPageManager.h"
+	"novemberlib/CHTMLTemplate.h"
+	"CUser.h"
+	"CMenu.h"
+	"CThread.h"
+
+1453558033 source:/home/anton/projects/advice/CUser.cpp
+	"CUser.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CBan.h"
+	"CSurvey.h"
+	<cstdlib>
+
+1449941792 source:/home/anton/projects/advice/CUserContentPage.cpp
+	"CUserContentPage.h"
+	"novemberlib/utils/utils.h"
+	"novemberlib/utils/CLog.h"
+	"novemberlib/FCGI/CFCGIRequest.h"
+	"novemberlib/helpers/CTemplateHelper.h"
+	"novemberlib/helpers/CMessageParser.h"
+	"novemberlib/helpers/CConfigHelper.h"
+	"novemberlib/managers/CDBManager.h"
+	"novemberlib/managers/CManagers.h"
+	"novemberlib/CHTMLTemplate.h"
+	"novemberlib/CBan.h"
+	"CUser.h"
+	"CThread.h"
+	"CPost.h"
+	"CSurvey.h"
+
+1449940238 source:/home/anton/projects/advice/main.cpp
+	"CAdviceBoard.h"
+

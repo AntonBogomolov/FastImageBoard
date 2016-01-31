@@ -1,0 +1,16 @@
+<div class='attachment'>
+	<div class='file_info  control_text'>
+		<span>Файл: <a href='{FILEPATH}' >{FILENAME}</a></span>
+		</br>
+		<span>Размер: {FILESIZE} Кб</span>
+		{isIMAGE}{<span>, {IMAGEWIDTH}x{IMAGEHEIGHT} </span>}{}	
+		</div>
+	{isIMAGE}{
+	<img class='attachment_preview' src='{IMAGEPREVIEWPATH}' alt='{IMAGEPREVIEWDESCRIPTION}' width='{IMAGEPREVIEWWIDTH}' height='{IMAGEPREVIEWHEIGHT}' onclick='fileClick(this, "{FILEPATH}","{IMAGEPREVIEWPATH}","{FILETYPE}", {IMAGEWIDTH}, {IMAGEHEIGHT},{IMAGEPREVIEWWIDTH},{IMAGEPREVIEWHEIGHT})'>}{}	
+	
+	{isVIDEO}{
+	<video width='360' height='240' preload='none' controls> <source src='{SOURCE}' type='{VIDTYPE}'> </video>	}{}
+	
+	{isAUDIO}{
+	<audio preload='none' controls> <source src='{SOURCE}' type='{AUDTYPE}'> </audio>	}{}
+</div>

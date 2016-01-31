@@ -1,0 +1,36 @@
+<div class='post {isOWNER}{owner}{}' id='p{POSTID}'>
+	<div class='info'>
+		<span class='user_name'>{USERNAME} </span>
+		{isMODDER}{
+		<a href='?page=usercontent&id={USERID}'>{USERID}</a>
+		<span> | Жалобы: {COMPLAINTS} </span>
+		<span> | Возр. рейтинг: {AGE} | </span>
+		{isNEEDPREMOD}{<span> | В премоде </span><span onclick='allowPremod("p{POSTID}")'> [Разрешить] </span>}{}
+		}{}
+		<span class='date'>  {DATE} </span>
+		<span class='id'> | id: p{ID} </span>		
+		<div class='reply_to'>
+			Ответ на: <span class='reply_to_link'>{PARENTID}</span>
+		</div>	
+	</div>	
+	<div class='postControls control_text'>
+		{CONTROLS}
+	</div>	
+	<hr>
+	{isHIDDEN}{}{	
+	<div class='user_content_container'>
+	<div class='attach'>
+		{ATTACH}
+	</div>
+	<div class='user_text {isMANYATTACH}{block_elem}{}'>
+		{TEXT}
+	</div>	
+	</div>
+	{isEDITED}{
+	<div class='modtime'>
+		Изменён: {EDITTIME}
+	</div>
+	}{}
+	<div class='post_end'>end</div>
+	}
+</div>

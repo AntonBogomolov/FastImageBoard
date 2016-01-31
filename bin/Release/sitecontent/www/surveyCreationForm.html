@@ -1,0 +1,41 @@
+<h2>Создать опрос</h2>
+<input type='hidden' name='user_id' value='{USERID}' />
+<div>
+	<span>Количество вопросов:  </span>
+	<input type='text' value='4' maxlength='2' size='2' pattern='[0-9]+' id='questCnt'>
+	<input type='button' value='Применить' onclick='createSurveyQuestions($("#questCnt").val())'>		
+</div>
+<div class='survey_creation survey'>	
+	<div class='survey_title'>
+		<span>Заголовок опроса: </span>
+		<input type='text' value='' maxlength='64' size='40' id='surveyTitle'>		
+	</div>
+	<div class='survey_description'>
+		<span>Описание опроса: </span>
+		<input type='text' value='' maxlength='128' size='70' id='surveyDescription'>
+	</div>
+	<div class='survey_questions' id='survey_questions'>
+	
+	</div>
+	<div class='survey_creation_control'>		
+		<br>
+		<span>Опрос продлится:  </span>
+		<input type='text' value='10' maxlength='2' size='2' pattern='[0-9]+' id='dayCnt'>
+		<span> дней  </span>
+		<br>
+		<input type='button' value='Создать опрос' onclick='createSurvey($("#dayCnt").val())'>
+	</div>
+</div>
+
+<hr>
+<br>
+
+<div>
+	<h2>Ваши Опросы</h2>
+	<br>
+	{USERSURVEYS}
+	<hr>
+	<br>
+	<h2>Опросы в которых вы участвовали</h2>
+	{USERSURVEYSANSWERS}
+</div>

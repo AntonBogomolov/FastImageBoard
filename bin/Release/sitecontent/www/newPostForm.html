@@ -1,0 +1,62 @@
+<div class='new_post_form' id='new_post_form'>
+	<form action='?command=newpost' method='post' enctype='multipart/form-data'>
+		<input type='hidden' name='user_id' value='{USERID}' />	
+		<input class="login_field" type='text' name='login' value='' />	
+		<table>
+			<tr>
+				<td class='col_label'>Имя</td> 
+				<td class='col_inputs'>
+				<input type='text' class='name_input' name='name' value='Анонимус' maxlength='30' pattern='[а-яА-Яa-zA-Z0-9_ ]+'/>
+				</td>
+			</tr>
+			<tr>
+				<td class='col_label'>Не поднимать тему</td> 
+				<td class='col_inputs'>
+				<input type='checkbox' name='sage' />							
+				<input type='hidden' name='ret_page' value='{RETURNPAGE}' />
+				<input type='hidden' name='thread_id' value='' />		
+				<input type='hidden' name='parent_id' value='' />					
+				</td>
+			</tr>			
+			<tr>
+				<td class='col_label'>Сообщение</td> 
+				<td class='col_inputs'>
+				<textarea class='text_input'  id='postReplyText' name='message' cols='60' rows='5'></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class='col_label'>Возрастной рейтинг</td> 
+				<td class='col_inputs'>
+				<select name='age_rating'>
+					<option selected value='0'>Для всех</option>
+					<option value='1'>После 13 лет</option>
+					<option value='2'>После 17 лет</option>
+					<option value='3'>После 18 лет</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td class='col_label'>Файлы</td> 
+				<td class='col_inputs'>						
+				<input type='hidden' id='post_files_cnt' name='post_files_cnt' value='0' />	
+				<div class='file_control control_text'>
+					<span id='"postFileDel0' onclick='delFile(this, false)'>[Очисить] </span>
+				</div>	
+				<div class='file_input'>
+					<input id='postFileUpload0' type='file' name='postfile0' onchange='checkFiles(this, false)'>
+				</div>			
+				<div class='file_status control_text'>
+					<span id="postFileStatus0"></span>
+				</div>
+				<div class='file_separator'></div>
+				<div class='file_del control_text'>
+					<span onclick='delAllFiles(false)'>[Очистить всё]</span>
+				</div>				
+				</td>
+			</tr>							
+		</table>
+		<div class='submit_button'>
+			<input type='submit' name='new_post' value='Отправить комментарий'/>	
+		</div>
+	</form>
+</div>

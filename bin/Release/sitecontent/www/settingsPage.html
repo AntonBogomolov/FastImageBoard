@@ -1,0 +1,63 @@
+<h1>Настройки</h1>
+<hr>
+<div>
+	<table width='100%' align='left' border='0'>
+		<tr>
+			<td width='30%'><span>Ваш UserID: </span></td>
+			<td width='70%'><input type='text' name='userId' value='{USERID}' readonly='true'></td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Ваш ключ: </span></td>
+			<td width='70%'><input type='text' name='userKey' value='{USERKEY}' readonly='true'></td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Сохраните его</span><br><p></p></td>
+			<td width='70%'></td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Возрастной рейтинг: </span></td>
+			<td width='70%'>
+			<select name='ageRating'>
+				<option {RE} value='0'>Для всех</option>
+				<option {RT} value='1'>После 13 лет</option>
+				<option {RM} value='2'>После 17 лет</option>
+				<option {RA} value='3'>После 18 лет</option>
+			</select>
+			<input type='button' value='Сохранить' name='saveAgeRating' onclick='saveUserAgeRating("ageRating")'/>
+			</td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Вы можете просматривать весь контент который попадает под выбранный рейтинг</span><br><p></p></td>
+			<td width='70%'></td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Скрыте посты: </span></td>
+			<td width='70%'>{HIDDENPOSTS}</td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Скрыте темы: </span></td>
+			<td width='70%'>{HIDDENTHREADS}</td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Избранные посты: </span></td>
+			<td width='70%'>{FAVORITEPOSTS}</td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Избранные темы: </span></td>
+			<td width='70%'>{FAVORITETHREADS}</td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Закреплённые темы: </span></td>
+			<td width='70%'>{FIXEDTHREADS}</td>
+		</tr>
+	</table>
+	<hr>
+	
+	<div>
+		<h2>Загрузить настройки</h2>
+		<p>Ключ пользователя, настройки которого нужно загрузить: </p><input type='text'  maxlength='17' name='new_userkey' value=''>
+		<input type='button' value='Загрузить' onclick='loadSettings()'>
+		<input type='hidden' name='user_id' value='{USERID}' readonly='true'>
+	</div>
+	
+</div>

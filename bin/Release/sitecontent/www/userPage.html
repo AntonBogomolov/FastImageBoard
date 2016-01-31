@@ -1,0 +1,62 @@
+<div>
+	{isMODER}{
+	<hr>
+	<input type='hidden' name='user_id' value='{MODID}'>
+	<table width='100%' align='left' border='0'>
+		<tr>
+			<td width='30%'><span>UserID: </span></td>
+			<td width='70%'><input type='text' name='userId' value='{USERID}' readonly='true'></td>
+		</tr>
+		<tr>
+			<td width='30%'><span>Ключ: </span></td>
+			<td width='70%'><input type='text' name='userKey' value='{USERKEY}' readonly='true'></td>
+		</tr>		
+		<tr>
+			<td width='30%'><span>Возрастной рейтинг: </span></td>
+			<td width='70%'>
+			<select name='ageRating'>
+				<option {RE} value='0'>Для всех</option>
+				<option {RT} value='1'>После 13 лет</option>
+				<option {RM} value='2'>После 17 лет</option>
+				<option {RA} value='3'>После 18 лет</option>
+			</select>			
+			</td>
+		</tr>		
+		<tr>
+			<td width='30%'><span>Баны: </span></td>
+			<td width='70%'>{USERBANS}</td>
+		</tr>
+		<tr>
+			<td width='30%'></td>
+			<td width='70%'><input type='button' value='Разбанить'  onclick='unbanUser({USERID})'></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<hr>
+	<div>
+		<span>ReadOnly на: </span>
+		<input id='roTimeInput' name='roTime' value='1' type='text' size='5' pattern='[0-9]'>
+		<span> дней </span>		
+		<span> | Закрыть доступ на сайт </span>
+		<input id='closeAccessInput' name='closeAccess' value='Закрыть доступ на сайт' type='checkbox'>		
+		<br>
+		<input type='button' value='Забанить' onclick='banUser({USERID}, $("#roTimeInput").val(), $("#closeAccessInput").is(":checked") )'>
+	</div>
+	<hr>
+	}{}
+	
+	<div>
+		<h2>Ваши темы</h2>		
+		{USERTHEMES}
+		<hr>
+		<br>
+		<h2>Ваши сообщения</h2>
+		{USERPOSTS}
+		<hr>
+		<br>
+		<h2>Ваши опросы</h2>
+		{USERSURVEYS}
+	</div>
+	
+</div>
